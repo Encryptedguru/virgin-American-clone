@@ -1,0 +1,39 @@
+.m-container {
+  width: 90%;
+}
+.l-heading {
+  font-size: 2.4rem;
+}
+nav .nav-list {
+  flex-wrap: wrap;
+}
+nav .nav-list li {
+  margin: .4rem 0;
+}
+
+.a-desc .m-container .card {
+  padding: .4rem .2rem;
+  line-height: 1.2em;
+}
+.a-desc .m-container .card h2 {
+  line-height: 1.2em;
+}
+.a-desc .m-container .card .c-links .btn{
+  display: block;
+  margin: .5rem .3rem;
+}
+footer .footer-img {
+  position: relative;
+}
+footer .footer-img img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+ .footer-p {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem 0;
+}

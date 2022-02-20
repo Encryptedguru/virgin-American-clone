@@ -1,0 +1,246 @@
+html {
+  scroll-behavior: smooth;
+  transition: scroll-behavior 1s ;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:wght@100&family=Roboto:wght@300&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* global val */
+:root {
+  --primary-color: red;
+  --l-max-width: 1300px;
+  --m-max-width: 1000px;
+  --card-color: #e6cbc5;
+}
+  
+/* utils */
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  background-color:var(--primary-color);
+  color: #fff;
+  padding: .7rem 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  
+}
+.btn:active{
+  transform: scale(.98);
+}
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-light {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+button {
+  border: none;
+}
+.text-primary {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.text-muted {
+  color: grey;
+  text-align: center;
+}
+.l-container {
+  width: 90%;
+  max-width: var(--l-max-width);
+  margin: 0 auto;
+}
+.m-container {
+  width: 80%;
+  max-width: var(--m-max-width);
+  margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+}
+.card {
+  background-color: var(--card-color);
+  padding: 1rem;
+}
+.card-light {
+  background-color: #fff;
+}
+.l-heading {
+  font-size: 4rem;
+  font-weight: 1200;
+  font-style: initial;
+}
+.row {
+  display: flex;
+}
+/* header */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  position: relative;
+}
+header .menu {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--card-color);
+  padding: .56rem 1.5rem;
+  cursor: pointer;
+  align-items: center;
+}
+.menu i {
+  margin-right: 3px;
+}
+header .logo {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: .2rem;
+  border-bottom: 1px solid rgb(202, 195, 195);
+}
+header .logo img {
+  position: relative;
+  top: 0;
+  left: 50%;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* navigation */
+nav {
+  padding: 2rem 0;
+  
+}
+nav .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+nav .nav-list li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+}
+/* .active, */ nav .nav-list li a:hover {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+.vg-links {
+  display: none;
+}
+.vg-links.active {
+  display: block;
+}
+nav .nav-list .vg-links {
+  position: absolute;
+  left: 90%;
+  top: 1.4rem;
+}
+nav .nav-list .vg-links ul li {
+  margin: .4rem 0;
+}
+.v-gatalic .l-heading {
+  text-align: center;
+  margin: 2rem;
+}
+.about {
+  margin: 1rem 0;
+}
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(207, 203, 203);
+}
+.about .m-container .testimonial .n-img img{
+  max-width: 80px;
+}
+
+.about .m-container .about-main > p {
+  margin: 1.5rem 0;
+}
+
+.a-desc .m-container > * {
+  margin: 1rem 0;
+}
+.a-desc .m-container .card {
+  padding: .5rem 2rem;
+  padding-bottom: 3rem;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+
+.a-desc .m-container .card > * {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.fireship {
+  background-color: var(--card-color);
+  padding: 2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.fireship .card {
+  max-width: 350px;
+  margin: .5rem auto;
+  
+}
+.fireship .card img {
+  width: 100%;
+  
+}
+
+/* footer */
+footer .footer-img {
+  padding: 2rem;
+}
+footer .footer-img img{
+  max-height: 40px;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-links .footer-lists li {
+  margin: .5rem;
+}
+footer .footer-links .footer-lists li:hover {
+  text-decoration: underline;
+}
+footer .footer-links .footer-lists li a {
+  color: #000;
+}
+
+
+footer .m-container .social .social-m {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 1.2rem 0;
+}
+footer .m-container .social .social-m li a {
+  color: #000;
+  margin-right: 2rem;
+}
+.footer-p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.copy-right{
+  padding: 1rem;
+  text-align: center;
+}
